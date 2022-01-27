@@ -5,7 +5,11 @@
   </head>
 
   <body>
+    <div id="logo"> 
+      <img src="SBW_Logo@2x.png"> 
+    </div> 
 
+    
     <div id="score">0</div>
     <canvas id="snakeboard" width="400" height="400"></canvas>
 
@@ -19,6 +23,8 @@
       #score {
         text-align: center;
         font-size: 140px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
       }
     </style>
   </body>
@@ -26,9 +32,8 @@
   <script>
     const board_border = 'black';
     const board_background = "white";
-    const snake_col = 'lightblue';
-    const snake_border = 'darkblue';
-    
+    const snake_col = '#00b300';
+    const snake_border = '#00b300';
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -81,7 +86,7 @@
     }
 
     function drawFood() {
-      snakeboard_ctx.fillStyle = 'lightgreen';
+      snakeboard_ctx.fillStyle = 'red';
       snakeboard_ctx.strokestyle = 'darkgreen';
       snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
       snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
