@@ -1,5 +1,5 @@
 # M288_Snake
-Abschkussarbeit
+Abschlussarbeit
 Snake Game mit Java und HTML
 
 https://snake.yannisbuck.sbw.media
